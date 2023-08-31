@@ -1,0 +1,67 @@
+#qs 1
+from random import randint
+l1=[]
+for i in range(10):
+    l1.append(randint(1,20))
+print(l1)
+
+#qs 2
+l2=[0]*10
+for j in range(10):
+    l2[j]=l1[9-j]
+print(l2)
+
+#qs 3
+import random
+l3=random.sample(range(100),10)
+l4=[]
+for i in range(10):
+    for j in range(i+1,10):
+        if((l3[i]*l3[j])%2!=0):
+            l4.append([l3[i],l3[j]])
+print(l3)
+print(l4)
+
+#qs 4
+'''import random
+l5=random.sample(range(100),15)
+print(l5,"\n",min(l5))'''
+
+import random
+l5=random.sample(range(100),10)
+least=l5[0]
+for i in l5:
+    if(i<least):
+        least=i
+print(l5,"\n","the least number is: ",least)
+
+#qs 5
+import random
+l6=random.sample(range(100),10)
+print(l6)
+l7=[]
+for i in range(len(l6)):
+    least=l6[0]
+    for j in l6:
+        if(j<least):
+            least=j
+    l6.remove(least)
+    l7.append(least)
+print(l7)
+#qs 6
+import random
+l=random.sample(range(100),10)
+for i in range(len(l)):
+    for j in range(len(l)-1):
+        if(l[j]>l[j+1]):
+            l[j],l[j+1]=l[j+1],l[j]
+print(l)
+
+#qs 7
+
+#qs 8
+s="this can't be a problem's solution"
+s1=s.replace("'","")
+print(s1)
+
+#qs 9
